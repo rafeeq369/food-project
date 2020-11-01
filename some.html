@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="some.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LoGo<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mnu">Menu</a></li>
+            <li><a href="#expert">Expert</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Zero Gravity</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed placeat natus nihil odio dolorum eius officia cumque illum quod?</p>
+            <a href="#" class="btn">Our Menu</a>
+        </div>
+    </section>
+    <script>
+        window.addEventListener('scroll', ()=>{
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+    </script>
+</body>
+</html>
