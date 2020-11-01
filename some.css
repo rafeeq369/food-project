@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+}
+body{
+    min-height: 1000px;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner .content{
+    max-width:  900px;
+    text-align: center;
+}
+.banner .content h2{
+    color: #fff;
+    font-size: 5em;
+}
+.banner .content p{
+    color: #fff;
+    font-size: 1em;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    transition: .2s;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navigation li{
+    display: inline-block;
+    padding: 0 10px;
+}
+header .navigation li a{
+    color: #fff;
+    font-weight: 300;
+    transition: .2s;
+}
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
+header.sticky {
+    color: #111;
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+header.sticky .logo, header.sticky ul li a{
+    color: #111;
+}
