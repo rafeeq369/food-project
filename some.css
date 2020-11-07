@@ -331,7 +331,15 @@ header.sticky .logo, header.sticky ul li a{
     font-weight: 600;
     text-emphasis: none;
 }
-
+.menu, .about, .menu, .expert, .testimonials, .contact {
+    padding: 90px 0;
+}
+.contact {
+    padding: 90px 0 0 100px;
+}
+.about {
+    padding: 90px;
+}
 @media(max-width: 991px){
     .banner{
         padding: 0 30px;
@@ -340,8 +348,48 @@ header.sticky .logo, header.sticky ul li a{
     header.sticky{
         padding: 10px 20px;
     }
-    .navigation{
-        /* display: none; */
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+    }
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .menuToggle.active{
+        background: url(images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 2000;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
     }
     .banner .content{
         max-width:  1420px;
@@ -359,10 +407,10 @@ header.sticky .logo, header.sticky ul li a{
     }
     .about .row .col50:nth-child(1){
         margin-bottom: 60px;
-        width: 100%;
+        width: 70%;
     }
     .about .row .col50{
-        width: 100%;
+        width: 70%;
         min-width: 300px;
     }
     /*  */
